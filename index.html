@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parcel Management</title>
+<style>
+  /* Reset & body */
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; background: linear-gradient(135deg, #f5f7fa, #c3cfe2); }
+
+  /* Heading */
+  h1 {
+    margin-bottom: 50px;
+    color: #333;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  }
+
+  /* Button container */
+  .button-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Circular button styles */
+  .circle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Hover effect */
+  .circle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  /* Specific button colors */
+  .send { background: #1976d2; }       /* Blue for Send Parcel */
+  .receive { background: #fbc02d; }    /* Yellow for Receive Parcel */
+  .driver { background: #43a047; }     /* Green for Driver */
+
+  /* Responsive text */
+  @media (max-width: 500px) {
+    .circle-btn { width: 120px; height: 120px; font-size: 0.9em; }
+    h1 { font-size: 1.5em; margin-bottom: 30px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>PARCEL MANAGEMENT</h1>
+
+<div class="button-container">
+  <a href="https://script.google.com/macros/s/AKfycbx0g2mMs0QohXxrf3xNgZTRd44N7VfMPeGWEAYWVZzk3a6KKHJE-BaNMG0N3GGS42L4-g/exec" class="circle-btn send" target="_blank">Send Parcel</a>
+  <a href="https://script.google.com/macros/s/AKfycbz81B3LxGaTEaGbPm6YTKDgxjrUsyCw3jx5FXYL6KK_iNs0WErWttlhpD2UYzfFe_E7/exec" class="circle-btn receive" target="_blank">Receive Parcel</a>
+  <a href="https://script.google.com/macros/s/AKfycbwW_TJoFzhL8gNeHfI_aYX-D1TJWcu9JG5iGjP6SeUaiSeSry25DHDf1gSpY19k23jlvg/exec" class="circle-btn driver" target="_blank">Driver</a>
+</div>
+
+</body>
+</html>
